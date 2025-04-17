@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 
-<body class="w-[100%]">
-    <header class="bg-gradient-to-b  from-[#0a0f22]  to-[#28498d] h-200 flex flex-col">
-        <nav class=" flex flex-row items-center justify-between ml-2 mr-0 pr-12 pl-12 mt-4 text-white text-[14px]">
+<body class="w-screen">
+    <header class="bg-gradient-to-b  from-[#0a0f22]  to-[#28498d] h-200 flex flex-col overflow-hidden relative">
+        <nav
+            class="  hidden md:flex lg:flex-row items-center justify-between ml-2 mr-0 pr-12 pl-12 mt-4 text-white lg:text-[14px] flex-wrap">
             <img class="w-7" src="./resources/chainsaw.png" alt="Icono de sierra">
             <p class="ml-auto px-5" for="perfil">SOBRE MI</p>
             <p class="px-5">HABILIDADES</p>
@@ -20,79 +21,104 @@
                 <p class="pr-2">CONTACTO</p>
                 <img class="w-7" src="./resources/up-right.png" alt="flecha">
             </button>
+
         </nav>
-        <div class="flex flex-col justify-center items-center h-[70%] text-base/6">
-            <h1 class=" text-white text-[60px]  text-shadow-lg/30 font-bold p-0">Yo soy<span
+        <div class="text-white md:hidden w-[100%] relative text-[12px]">
+            <ul class="list-none">
+                <li class="">
+                    <p class="" for="perfil">SOBRE MI</p>
+                </li>
+                <hr class="w-[20%]">
+                <li>
+                    <p class="">HABILIDADES</p>
+                </li>
+                <hr class="w-[20%]">
+                <li>
+                    <p class="">PROYECTOS</p>
+                </li>
+                <hr class="w-[20%]">
+                <button
+                    class="rounded-full border border-white flex flex-row items-center mt-1 p-1 absolute right-1 top-1 ">
+                    <p class="pr-2">CONTACTO</p>
+                    <img class="w-7" src="./resources/up-right.png" alt="flecha">
+                </button>
+            </ul>
+        </div>
+        <div class="flex flex-col md:justify-center items-center h-[70%] lg:text-base/6 leading-4 mt-3 md:p-0">
+            <h1 class=" text-white md:text-[60px] text-[35px]  text-shadow-lg/30 font-bold p-0">Yo soy<span
                     class="text-[#ebf88f] text-shadow-lg/30 font-bold p-0"> Kevin Diaz </span>
             </h1>
             <br>
             <br>
             <br>
-            <h1 class="text-white text-[60px] text-shadow-lg/30 font-bold p-0 "><span
-                    class="border border-amber-50 rounded-2xl">Front end</span>
+            <h1 class="text-white md:text-[60px] text-[30px] text-shadow-lg/30 font-bold p-0 "><span
+                    class="border border-amber-50 rounded-2xl p-1 md:p-0">Front end</span>
                 Developer</h1>
         </div>
         <div class="relative flex">
             <!-- flex flex-row justify-between relative -->
             <div
-                class="bg-[#1e2337] h-[150px] w-[250px] rounded-lg z-3 absolute left-0 pl-5 flex flex-col justify-center shadow-[0_0px_45px_rgba(99,105,123,1)] -rotate-15">
+                class="bg-[#1e2337] h-[100px] w-[200px]  md:h-[150px] md:w-[250px] rounded-lg z-3 absolute left-0 -top-28 md:top-0 pl-5 flex flex-col justify-center shadow-[0_0px_45px_rgba(99,105,123,1)] -rotate-15">
                 <!-- flex flex-col justify-center pl-5 -->
-                <h3 class="text-white text-[15px]">Client review From <br> Australia <span
+                <h3 class="text-white text-[10px] md:text-[15px]">Client review From <br> Australia <span
                         class="bg-purple-900 text-[14px]">5.0</span>
                 </h3>
-                <p class="text-[#63697b] text-[15px]">Oustanding Web Developer,
+                <p class="text-[#63697b] text-[10px] md:text-[15px]">Oustanding Web Developer,
                     <br>Exceeded All Expectation. highly
                     <br>Recomended Without hesitation
                 </p>
             </div>
             <div
-                class="bg-[#1e2337] h-[150px] w-[250px] rounded-lg z-4 absolute right-0 shadow-[0_0px_45px_rgba(99,105,123,1)] leading-4 p-3 rotate-15 ">
-                <h3 class="text-white text-[15px]">MY EXPERTISE</h3>
+                class="bg-[#1e2337] h-[100px] w-[200px] md:h-[150px] md:w-[250px] rounded-lg z-4 absolute right-0 -top-60 md:top-0 shadow-[0_0px_45px_rgba(99,105,123,1)] leading-2 md:leading-3 p-3 rotate-15">
+                .
+                <h3 class="text-white text-[10px] md:text-[15px]">MY EXPERTISE</h3>
                 <br>
                 <div class="flex flex-row justify-between relative">
-                    <p class="text-[#63697b] text-[15px]">BACKEND</p>
-                    <div class="bg-white h-1 my-auto w-[100%]"></div>
+                    <p class="text-[#63697b] text-[10px] md:text-[15px]">BACKEND</p>
+                    <div class="bg-white  h-0.5 md:h-1 my-auto w-[100%]"></div>
                     <div class="bg-purple-700 h-4 w-4 border border-amber-50 rounded-full absolute left-2/3 "></div>
-                    <span class="border border-amber-50 rounded text-amber-50">88%</span>
+                    <span class="border border-amber-50 rounded text-amber-50 text-[12px] p-0.5 md:p-0">88%</span>
                 </div>
                 <br>
                 <div class="flex flex-row justify-between">
-                    <p class="text-[#63697b] text-[15px]">CMS</p>
-                    <div class="bg-white h-1 my-auto mr-auto w-[60%]"></div>
+                    <p class="text-[#63697b] text-[10px] md:text-[15px]">CMS</p>
+                    <div class="bg-white h-0.5 md:h-1 my-auto mr-auto w-[60%]"></div>
                     <div class="bg-blue-500 h-4 w-4 border border-amber-50 rounded-full absolute left-2/4 "></div>
-                    <span class="border border-amber-50 rounded text-amber-50">90%</span>
+                    <span class="border border-amber-50 rounded text-amber-50 text-[12px] p-0.5 md:p-0">90%</span>
                 </div>
                 <br>
                 <div class="flex flex-row justify-between">
-                    <p class="text-[#63697b] text-[15px]">FROTEND</p>
-                    <div class="bg-white h-1 my-auto w-[100%]"></div>
+                    <p class="text-[#63697b] text-[10px] md:text-[15px]">FROTEND</p>
+                    <div class="bg-white  h-0.5 md:h-1 my-auto w-[100%]"></div>
                     <div class="bg-yellow-200 h-4 w-4 border border-amber-50 rounded-full absolute left-2/3 "></div>
-                    <span class="border border-amber-50 rounded text-amber-50">93%</span>
+                    <span class="border border-amber-50 rounded text-amber-50 text-[12px] p-0.5 md:p-0">93%</span>
                 </div>
             </div>
         </div>
-        <div class="flex flex-row relative">
-            <img class="w-90 mx-auto z-0 drop-shadow-[0_-100px_120px_rgba(235,248,143,1)]"
+        <div class="flex flex-row relative items-center justify-center">
+            <img class="lg:w-90 w-65 mx-auto z-0 drop-shadow-[0_-100px_120px_rgba(235,248,143,1)]"
                 src="./resources/WhatsApp Image 2025-04-14 at 12.48.33 AM-Photoroom.png" alt="">
             <!-- </div> -->
             <button
-                class="bg-[#ebf88f] border-b-black border-2 p-2 rounded-full w-40 font-semibold absolute bottom-1 right-[45%] left-[45%] mb-5 ">
+                class="bg-[#ebf88f] border-b-black border-2 p-2 rounded-full w-40 font-semibold absolute bottom-1 mb-5 ">
                 MIS PROYECTOS
             </button>
         </div>
     </header>
     <main>
         <section class="bg-[#0a0f22] h-200 flex flex-col justify-center items-center text-center relative">
-            <img class="absolute w-[180px] left-12 top-1/2 rounded-3xl rotate-15 shadow-[0_0px_45px_rgba(99,105,123,1)]"
+            <img class="absolute lg:w-[180px] w-[70px] left-12 bottom-3 md:top-1/2 rounded-3xl rotate-15 shadow-[0_0px_45px_rgba(99,105,123,1)] z-0"
                 src="./resources/foto1.jpeg" alt="foto1">
-            <img class="absolute w-[140px] right-16 top-1/2 rounded-3xl -rotate-15 shadow-[-25px_-25px_45px_rgba(99,105,123,1)] "
+            <img class="absolute md:w-[140px] w-[80px] right-16 bottom-3 md:top-1/2 rounded-3xl -rotate-15 shadow-[-25px_-25px_45px_rgba(99,105,123,1)]  "
                 src="./resources/foto2.jpeg" alt="">
             <span class="flex flex-col">
-                <h2 class="text-[#ebf88f] text-shadow-lg/30 font-bold p-0  text-[60px] z-1" id="perfil"> ¿QUIEN SOY?
+                <h2 class="text-[#ebf88f] text-shadow-lg/30 font-bold p-0  lg:text-[60px] text-[40px] z-1" id="perfil">
+                    ¿QUIEN SOY?
                 </h2>
             </span>
             <br>
-            <p class="text-white text-[20px] ">I am a full-stack website dveloper specialized in reactJs. Plus I<br>
+            <p class="text-white lg:text-[20px] text-[15px] ">I am a full-stack website dveloper specialized in reactJs.
+                Plus I<br>
                 Also know some Wordpress front-enf development with<br>
                 Elementos and WooCommerce<br><br>
                 Programming is my passion, that´s the reason I am working at the<br>
@@ -101,13 +127,14 @@
                 My leisure time which is kinda fun and relaxing
             </p>
             <br>
-            <button class="bg-[#ebf88f] border-b-black border-2 p-2 rounded-full w-80 font-semibold ">
+            <button class="bg-[#ebf88f] border-b-black border-2 lg:p-2 rounded-full w-50 p-1 lg:w-80 font-semibold ">
                 MOSTRAR MIS PROYECTOS
             </button>
         </section>
         <section class="bg-[#0a0f22] h-350 flex flex-col">
 
-            <span class="text-[#ebf88f] h-12 text-shadow-lg/30 font-bold p-0  text-[60px] z-1 block text-center pt-5">
+            <span
+                class="text-[#ebf88f] h-12 text-shadow-lg/30 font-bold p-0 lg:text-[60px] text-[40px] z-1 block text-center pt-5 ">
                 MIS
                 HABILIDADES</span>
             <br>
@@ -156,7 +183,8 @@
                     <h3 class="text-[100px] text-white font-bold">4</h3>
                     <h3 class="text-[40px] text-white font-semibold leading-11">Years <br>Experience<br>Working</h3>
                     <br>
-                    <button class="bg-[#ebf88f] border-b-black border-2 p-2 rounded-full w-80 font-semibold ">
+                    <button
+                        class="bg-[#ebf88f] border-b-black border-2 p-2 rounded-full lg:w-80 md:w-52 font-semibold ">
                         DOWNLOAD MY CV
                     </button>
 
@@ -164,18 +192,25 @@
 
             </section>
             <section class="border-amber-50 border-1 m-5 h-1/4 bg-[#1d2237] flex flex-col items-center justify-center">
-                <h3 class="text-[40px] text-[#ebf88f] font-semibold">HABILIDADES ADICIONALES</h3>
+                <h3 class="lg:text-[40px] text-[30px] text-[#ebf88f] font-semibold text-center">HABILIDADES ADICIONALES
+                </h3>
                 <br>
                 <br>
-                <div class="flex flex-row gap-8">
-                    <img class="w-[80px] h-[80px]" src="./resources/axios.png" alt="axios-icon">
-                    <img class="w-[80px] h-[80px]" src="./resources/reduz_jv.png" alt="reduz-icon">
-                    <img class="w-[100px] h-[80px]" src="./resources/Bootstrap_logo.svg.png" alt="Bootstrap-icon">
-                    <img class="w-[80px] h-[80px]" src="./resources/mui-labs.png" alt="muilabs-icon">
-                    <img class="w-[80px] h-[80px]" src="./resources/firestorelogo.png" alt="firestore-icon">
-                    <img class="w-[80px] h-[80px]" src="./resources/pngimg.com - wordpress_PNG41.png"
-                        alt="Wordpress-icon">
-                    <img class="w-[80px] h-[80px]" src="./resources/mui-labs.png" alt="Muilabs-icon">
+                <div class="flex lg:flex-row gap-8 md:flex-wrap flex-wrap justify-center text-center">
+                    <img class="lg:w-[80px] lg:h-[80px]  w-[50px] h-[50px]" src="./resources/axios.png"
+                        alt="axios-icon">
+                    <img class="lg:w-[80px] lg:h-[80px]  w-[50px] h-[50px]" src="./resources/reduz_jv.png"
+                        alt="reduz-icon">
+                    <img class="lg:w-[100px] lg:h-[80px] w-[70px] h-[50px]" src="./resources/Bootstrap_logo.svg.png"
+                        alt="Bootstrap-icon">
+                    <img class="lg:w-[80px] lg:h-[80px]  w-[50px] h-[50px]" src="./resources/mui-labs.png"
+                        alt="muilabs-icon">
+                    <img class="lg:w-[80px] lg:h-[80px]  w-[50px] h-[50px]" src="./resources/firestorelogo.png"
+                        alt="firestore-icon">
+                    <img class="lg:w-[80px] lg:h-[80px]  w-[50px] h-[50px]"
+                        src="./resources/pngimg.com - wordpress_PNG41.png" alt="Wordpress-icon">
+                    <img class="lg:w-[80px] lg:h-[80px] w-[50px] h-[50px]"
+                        src="./resources/framer-motion-logo-png_seeklogo-446185.png" alt="Framer-Motion-icon">
                 </div>
             </section>
         </section>
@@ -183,31 +218,35 @@
             <br>
 
 
-            <div class="h-[90%] flex flex-raw justify-end flex-wrap relative gap-4 m-5 mr-15">
-                <h3 class=" text-white text-7xl  text-shadow-lg/30 font-bold absolute left-1/9 top-1/4">THE WORKS
+            <div
+                class="h-[90%] flex flex-col items-center md:flex-raw md:content-end flex-wrap relative gap-4 lg:m-5 md:m-2 md:mr-15 ">
+                <h3 class=" text-white lg:text-7xl  text-shadow-lg/30 font-bold absolute left-1/9 top-1/4 md:text-4xl">
+                    THE
+                    WORKS
                     <br>CLOSEST
                     TO<br> MY HEART
                 </h3>
-                <div class="flex flex-row h-1/10 absolute bottom-15 left-1/4 gap-5">
+                <div class="flex md:flex-row h-1/10 absolute bottom-15 left-1/4 md:gap-5">
                     <button
-                        class="bg-[#ebf88f] border-b-black border-2 p-3 rounded-full w-100 font-bold mr-4 shadow-[0_0px_45px_rgba(99,105,123,1)]  ">
+                        class="bg-[#ebf88f] border-b-black border-2 p-3 rounded-full w-30 lg:w-100 font-bold mr-4 shadow-[0_0px_45px_rgba(99,105,123,1)]  ">
                         MOSTRAR MIS PROYECTOS
                     </button>
-                    <h4 class="text-white text-3xl font-semibold text-shadow-[0_0px_10px_rgba(99,105,123,1)]">
+                    <h4
+                        class="text-white text-2xl lg:text-3xl font-semibold text-shadow-[0_0px_10px_rgba(99,105,123,1)]">
                         Plumbing<br>Company</h4>
                 </div>
-                <img class="border border-white w-1/4 rounded-3xl h-full object-cover" src="./resources/plumbing.webp"
-                    alt="img-plomeria">
-                <img class="border border-white w-1/8 rounded-3xl object-cover hover:w-1/4 ease-in-out duration-75"
+                <img class="border border-white w-1/3 md:w-1/4 rounded-3xl md:h-full object-cover h-1/4"
+                    src="./resources/plumbing.webp" alt="img-plomeria">
+                <img class="border border-white w-1/3 md:w-1/8 rounded-3xl object-cover md:h-full md:hover:w-1/4 ease-in-out duration-75 h-1/4"
                     src="resources/drink.jpg" alt="Img-bebida">
-                <img class="rounded-3xl object-cover hover:w-1/4 w-1/8 ease-in-out duration-75"
+                <img class="rounded-3xl object-cover w-1/3 md:hover:w-1/4 md:w-1/8 md:h-full ease-in-out duration-75 h-1/4"
                     src="./resources/robin grassner.jpg" alt="Img-edificio">
             </div>
         </section>
         <section class="bg-[#0a0f22] h-200 ">
             <br>
             <form action="" class="bg-[#ffffff] h-[85%] m-6 border-0 rounded-4xl text-center p-10">
-                <h3 class="font-bold text-[50px]">LET´S HAVE A CHAT</h3>
+                <h3 class="font-bold text-[30px] lg:text-[50px]">LET´S HAVE A CHAT</h3>
                 <br>
                 <input type="text" placeholder="YOUR NAME" class="bg-[#e3e3e3] rounded-3xl h-[15%] w-[100%] pl-10">
                 <br>
@@ -219,7 +258,7 @@
                     class="bg-[#e3e3e3] rounded-3xl h-[30%] w-[100%] resize-none p-10 "></textarea>
                 <br>
                 <br>
-                <button class="bg-[#ebf88f] border-b-black border-2 p-2 rounded-full w-80 font-semibold ">
+                <button class="bg-[#ebf88f] border-b-black border-2 p-2 rounded-full w-50  lg:w-80 font-semibold ">
                     ENVIAR AQUI
                 </button>
             </form>
